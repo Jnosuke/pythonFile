@@ -1,0 +1,11 @@
+numlist = [3, 4.01, 10, "x", 1, 9]
+
+sum = 0
+
+for num in numlist :
+   if not isinstance(num, (int, float)) :
+       print(num, "数値ではありません")
+       break
+
+   sum += num
+   print(num, "/", sum)
